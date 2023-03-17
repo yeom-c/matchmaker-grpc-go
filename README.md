@@ -1,7 +1,7 @@
 ## Matchmaker Server gRPC Go
 
 ### 소개
-> grpc golang 매칭서버 저장소입니다.
+> grpc bidirectional streaming 을 활용한 양방향 통신 golang 매칭서버 저장소입니다.
 - [Go gRPC](https://grpc.io/docs/languages/go/quickstart)
 - [SQLC](https://github.com/kyleconroy/sqlc)
 
