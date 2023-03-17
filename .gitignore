@@ -1,0 +1,12 @@
+.idea
+.vscode
+tmp
+
+.env*
+!.env.example
+
+Makefile*
+!Makefile.example
+.DS_Store
+
+cert

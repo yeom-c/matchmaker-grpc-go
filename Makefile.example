@@ -1,0 +1,14 @@
+gen.sqlc:
+	rm -f ./db/sqlc/*/*.sql.go | rm -f ./db/sqlc/*/models.go | rm -f ./db/sqlc/*/db.go; \
+	sqlc generate
+
+add.protobuf:
+	git submodule add git@github.com:yeom-c/protobuf-grpc-go.git protobuf/;
+	git submodule update --remote;
+
+reset.protobuf:
+	git submodule deinit -f protobuf;
+	rm -rf .git/modules/protobuf;
+	git rm -f protobuf;
+
+.PHONY: gen.sqlc add.protobuf reset.protobuf
